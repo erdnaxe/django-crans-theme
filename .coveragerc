@@ -1,5 +1,5 @@
 [run]
-source = src/crans_theme
+source = src/django_crans_theme
 omit = *migrations*, *tests*
 plugins =
     django_coverage_plugin
