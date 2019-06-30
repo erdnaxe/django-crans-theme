@@ -6,7 +6,6 @@
 from django.conf.urls import include, url
 from django.contrib import admin
 from django.views.generic import RedirectView
-from django_prometheus import exports
 
 urlpatterns = [
     # No app, so redirect to admin
