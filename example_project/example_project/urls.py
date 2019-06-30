@@ -9,7 +9,7 @@ from django.views.generic import RedirectView
 
 urlpatterns = [
     # No app, so redirect to admin
-    url(r'^', RedirectView.as_view(url='/admin/'), name='index'),
+    url(r'^$', RedirectView.as_view(pattern_name='admin:index'), name='index'),
 
     # Include Django Contrib and Core routers
     # admin/login/ is redirected to the non-admin login page
@@ -17,7 +17,6 @@ urlpatterns = [
     url(r'^accounts/', include('django.contrib.auth.urls')),
     url(r'^accounts/profile/',
         RedirectView.as_view(pattern_name='index')),
-    url(r'^admin/login/', RedirectView.as_view(pattern_name='login')),
     url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
     url(r'^admin/', admin.site.urls),
 ]

@@ -10,7 +10,7 @@ from setuptools import find_packages, setup
 
 
 # Calculate the version number without importing the postorius package.
-with open('src/crans_theme/__init__.py') as fp:
+with open('src/django_crans_theme/__init__.py') as fp:
     for line in fp:
         mo = re.match("__version__ = '(?P<version>[^']+?)'", line)
         if mo:
