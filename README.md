@@ -15,7 +15,7 @@ For development in a virtualenv:
 $ pip3 install -e . --user
 ```
 
-## Licence
+## License
 
 This project is under the [GPL license](COPYING) because we believe in open
 development.
