@@ -1,4 +1,4 @@
-include LICENSE
+include COPYING
 include README.md
 recursive-include src/django_crans_theme/static *
 recursive-include src/django_crans_theme/templates *
